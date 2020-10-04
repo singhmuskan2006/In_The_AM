@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>Booking Form/title>
+	<!-- <meta charset="utf-8"> -->
+	<link rel="stylesheet" type="text/css" href="rocket.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+		<div class="container">
+		  <form action="action_page.php">
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="name">Name</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="text" id="name" name="name" placeholder="Name..">
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="no">Number Of Tickets</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="number" id="no" name="tickets" placeholder="Number Of Tickets">
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="add">Add-ons</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="radio" id="none" name="foodrink" value="None">
+				<label for="none">None</label><br>
+				<input type="radio" id="fo" name="foodrink" value="fo">
+				<label for="fo">Food</label><br>
+				<input type="radio" id="dr" name="foodrink" value="dr">
+				<label for="dr">Drinks</label><br>
+				<input type="radio" id="fd" name="foodrink" value="fd">
+				<label for="fd">Food and Drinks</label><br>
+
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="add">Date</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="radio" id="one" name="date" value="one">
+				<label for="one">5/10/2041</label><br>
+				<input type="radio" id="two" name="date" value="two">
+				<label for="two">6/10/2041</label><br>
+				<input type="radio" id="three" name="date" value="three">
+				<label for="three">7/10/2041</label><br>
+				<input type="radio" id="four" name="date" value="four">
+				<label for="four">8/10/2041</label><br>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="add">Time</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="radio" id="morn" name="time" value="morn">
+				<label for="morn">10 AM</label><br>
+				<input type="radio" id="af" name="time" value="af">
+				<label for="af">1:30 PM</label><br>
+				<input type="radio" id="eve" name="time" value="eve">
+				<label for="eve">6 PM</label><br>
+				<input type="radio" id="ni" name="time" value="ni">
+				<label for="ni">11 PM</label><br>
+		      </div>
+		    </div>
+		    <div class="row">
+		    	<a href="#recipt"><button type="button" onclick="getNameValue()" id="sub">Submit</button></a>
+			 </div>
+		  </form>
+		
+		<div id="recipt">
+			<h1>TICKET</h1>
+			<p>NAME- <span id="r_name"></span></p>
+			<p>TOTAL PRICE- <span id="r_no"></span> Amaranths </p>	
+			<p>DATE- <span id="r_date"></span></p>	
+			<p>TIME- <span id="r_time"></span></p>	
+		</div>
+	</div>
+	<script type="text/javascript">
+			function getNameValue(){
+				var nam = document.getElementById("name").value;
+  				document.getElementById("r_name").innerHTML = nam;
+
+  				var n = document.getElementById("no").value;
+  				if(n>10 || n<1)
+  					alert("Invalid Input. Enter a number between 1 and 10");
+				var total1 = 19 * n;
+
+				var food = document.getElementById("fo").value;
+				var drn = document.getElementById("dr").value;
+				var both = document.getElementById("fd").value;
+				if(food.checked)
+					total1 = total1 + 150;
+				if(drn.checked)
+					total1 = total1 + 100;
+				if(both.checked)
+					total1 = total1 + 200;
+  				document.getElementById("r_no").innerHTML = total1;
+
+  				var date1 = document.getElementById("one");
+  				var date2 = document.getElementById("two");
+  				var date3 = document.getElementById("three");
+  				var date4 = document.getElementById("four");
+  				if(date1.checked)
+  					document.getElementById("r_date").innerHTML = "5/10/2041";
+  				if(date2.checked)
+  					document.getElementById("r_date").innerHTML = "6/10/2041";
+  				if(date3.checked)
+  					document.getElementById("r_date").innerHTML = "7/10/2041";
+  				if(date4.checked)
+  					document.getElementById("r_date").innerHTML = "8/10/2041";
+
+  				var time1 = document.getElementById("morn");
+  				var time2 = document.getElementById("af");
+  				var time3 = document.getElementById("eve");
+  				var time4 = document.getElementById("ni");
+  				if(time1.checked)
+  					document.getElementById("r_time").innerHTML = "10 AM";
+  				if(time2.checked)
+  					document.getElementById("r_time").innerHTML = "1:30 PM";
+  				if(time3.checked)
+  					document.getElementById("r_time").innerHTML = "6 PM";
+  				if(time4.checked)
+  					document.getElementById("r_time").innerHTML = "11 PM";
+
+
+			}
+	</script>
+	</body>
+</html>
