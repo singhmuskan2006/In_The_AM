@@ -1,0 +1,212 @@
+html,body{
+  background-image: url("images/bg.jpg");
+}
+@font-face {
+font-family: "Deras";
+src: url("DerasDemoMedium.ttf");
+}
+div{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+#home{
+	position: absolute;
+	left: 1vw;
+	top: 3vh;
+	height: 3em;
+	width: 3em;
+}
+#cinemalinkdiv{
+	position: absolute;
+	float: right;
+	/*background-color: #481bbb;*/
+	right: 2vw;
+	top: 4vh;
+	/*height: 2em;
+	width: 12em;
+	border-radius: 10px;
+	text-align: center;*/
+}
+/*#cinemalink{
+	color: #ffffff;
+	text-align: center;
+	font-size: 1em;
+	text-decoration: none;
+}*/
+#ionoxlogo{
+	float: right;
+	height: 4em;
+	width: 4em;
+}
+/*.topnav input[type=text] {
+  position: absolute;
+  border: none;
+  margin-left: 63em;
+  top: 5vh;
+  width: 12em;
+  height: 2em;
+  border-radius: 10px;
+}*/
+#logodiv{
+	position: absolute;
+	float: right;
+	right: -5vw;
+	top: 2vh;
+	height: 2em;
+	width: 12em;
+}
+#logo{
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+/*.topnav input[type=text] {
+  position: absolute;
+  border: none;
+  margin-left: 63em;
+  top: 5vh;
+  width: 12em
+  height: 2em;
+  border-radius: 10px;
+}*/
+form.example input[type=text] {
+  position: absolute;
+  border: none;
+  float: right;
+  right: 20vw;
+  top: 5vh;
+  width: 12em;
+  height: 2.5em;
+  /border-radius: 10px;/
+}
+
+/* Style the submit button */
+form.example button {
+  position: absolute;
+  float: right;
+  right: 19vw;
+  top: 5vh;
+  height: 2.65em;
+  width: 2.65em;
+  background: #481bbb;
+  color: white;
+  border: none;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.ionox{
+  background-image: url("images/bg.jpg");
+  color: white;
+  margin-top: 10vh;
+  text-align: center;
+  font-family: Deras;
+  padding: 10% 10% 10% 10%;
+  font-size: 5em;
+  background-attachment: fixed;
+}
+.intro{
+  margin-top: 15vh;
+  max-height: ;
+  background-color: rgba(110, 20, 180, 0.4);
+  padding: 10% 10% 10% 10%;
+  background-attachment: fixed;
+}
+.intro p{
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 1.5em;
+}
+.intro h1{
+  text-align: center;
+  font-family: Arial;
+  color: white;
+}
+#originals{
+  background-image: url("images/bg.jpg");
+  font-size: 2.5em;
+  color: white;
+  font-family: Deras;
+  text-align: center;
+  background-attachment: fixed;
+}
+.pics1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.pics1 img{
+  width: 250px;
+  height: 250px;
+}
+#throwbacks{
+  background-image: url("images/bg.jpg");
+  font-size: 2.5em;
+  color: white;
+  font-family: Deras;
+  text-align: center;
+  background-attachment: fixed;
+}
+.pics1{
+  background-image: url("images/bg.jpg");
+  background-attachment: fixed;
+}
+.purple{
+  background-color: white;
+  font-size: 0.5em;
+  opacity: 0.5;
+  color: white;
+}
+.text{
+  background-color: #001d29;
+  opacity: 0.8;
+}
+footer img{
+  height: 70vh;
+	width: 100vw;
+}
+.button{
+  border: 1px white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: black;
+  margin-right: 2vw;
+}
+footer img{
+  height: 70vh;
+	width: 100vw;
+}
+.button{
+  border: 1px white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.5;
+  margin-right: 2vw;
+}
