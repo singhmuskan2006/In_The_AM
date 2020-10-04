@@ -541,7 +541,7 @@ input[type=submit] {
 
 
 #sub{
-	background-color: #4CAF50;
+	background-color: #black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -557,7 +557,7 @@ input[type=submit] {
 	width: 93vw;
 	position: absolute;
 	top: 50em;
-	background-color: #c6c6c6;
+	background-color: black;
 	height: 16em;
 	margin-bottom: 5em;
 	border-radius: 10px;
